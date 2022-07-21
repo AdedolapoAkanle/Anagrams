@@ -1,0 +1,365 @@
+* {
+    font-family: 'Mulish', sans-serif;
+}
+body {
+    margin: 0;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 30px;
+
+}
+.scores, .player, .level {
+    color: #393e46;
+}
+
+.value {
+    color: #492540;
+    box-shadow: 0px 2px 5px #393e46;
+    padding: 5px 7px;
+    border-radius: 3px;
+    
+}
+
+.fa-heart {
+    color: #cd0a0a;
+    font-size: 15px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(#5e366a, #a070a1);
+}
+
+.container {
+   background-color: #e7e7de;
+   box-shadow: #303841 0px 5px 15px;
+   border-radius: 5px;
+   padding: 25px 70px;
+}
+
+.alert {
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 2px 5px #393e46;
+    margin: 0 220px;
+    color: #5e366a;
+    padding: 5px;
+    background-color: #f0e3c4;
+}
+
+.guess-word {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px;
+    border-radius: 5px; 
+}
+
+.word {
+    box-shadow: 0px 2px 5px #393e46;
+    background-color: #a05f96;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 17px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 300;
+    color: #f0e3c4;
+    border: 1px solid #7a5d7e;
+}
+
+.guess_letters {
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 1px #393e46;
+    background-color: #7a5d7e;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.letters {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 200px;
+}
+
+.letters:focus {
+    outline: none;
+}
+
+.input {
+    box-shadow: 0px 2px 5px #d3a284;
+    background-color: #f0e3c4;
+    border: 1px solid #c7b198;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    color: #5e366a;
+}
+
+.input:hover {
+    background-color: #d3a284;
+    transform: scale(1.2, 1);
+}
+
+
+/* Game Menu */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #f0e3c4;
+    padding-top: 20px;
+}
+
+.first {
+    background-color: #793e71;
+    padding: 0 10px;
+    border-radius: 10px;
+    height: 55px;
+    font-family: 'Kalam', cursive;
+    transform: rotate(20deg);
+    border: 1px solid #524a79;
+    z-index: 1;
+    box-shadow: 0px 2px 5px #524a79;
+    
+   
+}
+
+.second {
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: #793e71;
+    font-family: 'Kalam', cursive;
+    height: 55px;
+    transform: rotate(-10deg);
+    border: 1px solid #524a79;
+    box-shadow: 0px 2px 5px #524a79;
+}
+
+.third {
+    border-radius: 10px;
+    height: 55px;
+    padding: 0 10px;
+    background-color: #793e71;
+    font-family: 'Kalam', cursive;
+    transform: rotate(300deg);
+    border: 1px solid #524a79;
+    z-index: 1;
+    box-shadow: 0px 2px 5px #524a79;
+}
+
+.anagram {
+    text-align: center;
+    font-size: 40px;
+    color: #393e46;
+
+}
+
+.list {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.game-list {
+    margin: 30px 0;
+    cursor: pointer;
+    color: #492540;
+}
+
+.game-list:hover {
+    box-shadow: 0 2px 5px #5e366a;
+    background-color: #7a5d7e;
+    color: #f0e3c4;
+    padding: 5px;
+}
+
+
+
+/* Settings */
+
+.game-setting {
+    display: none;
+    background-color: #e7e7de;
+    box-shadow: #303841 0px 5px 15px;
+    border-radius: 5px;
+    padding: 25px 50px;
+    margin-right: 100px;
+}
+
+.player-input {
+    border-bottom: 2px solid #d7d7d7;
+    padding-bottom: 10px;
+
+}
+
+.player-name {
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #856c8b;
+    background-color: #f6f6f6;
+   
+}
+
+.player-name:focus {
+    color: #5e366a;
+    outline: none;
+    border-bottom: 3px solid #524a79;
+}
+
+
+.setting {
+    text-align: center;
+    color: #393e46;
+    font-size: 23px;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px #393e46;
+}
+
+.arrow {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #393e46;
+    cursor: pointer;
+}
+
+
+.fa-gear {
+    font-size: 20px;
+    padding-right:10px;
+    color: #b7b7b7;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-group:not(:last-child) {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #d7d7d7;
+}
+
+.radio-label {
+    cursor: pointer; 
+    font-size: 13px;
+    font-weight: 700;
+    color: #492540 ;
+}
+
+.name {
+    color: #856c8b;
+    font-size: 18px;
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #fafafa;
+    border-radius: 100%;
+    cursor: pointer;
+    outline: #524a79;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="checkbox"]:after {
+    position: relative;
+    left: -11px;
+    bottom: 3px;
+    font-family: monospace;
+    font-weight: 200;
+    font-size: 60px;
+    content: "\00B7";
+    color: #524a79;
+    display: none;
+    
+}
+
+input[type="checkbox"]:hover {
+    background-color: #f6f6f6;
+    border: 1px solid #524a79;
+
+
+}
+
+input[type="checkbox"]:checked{
+    border: #524a79;
+    border: 2px solid #524a79;
+
+
+}
+
+input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+
+/* Leader Board */
+.leader-board {
+    display: none;
+    background-color: #e7e7de;
+    box-shadow: #303841 0px 5px 15px;
+    border-radius: 5px;
+    padding: 25px 50px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.board-header {
+    color: #393e46;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 27px;
+    font-weight: 700;
+    box-shadow: 0px 2px 5px #393e46;
+}
+
+.leader-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.leader-name {
+    padding: 12px;
+    font-size: 20px;
+    color: #5e366a;
+    font-weight: 700;
+}
+
+.leader-score {
+    padding: 12px;
+    font-size: 20px;
+    color: #cd0a0a;
+    font-weight: 700;
+    margin-left: 100px;
+}
